@@ -35,6 +35,10 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+![image](https://github.com/user-attachments/assets/90e39418-3afb-4272-9416-c27768dcf51c)
+
+![image](https://github.com/user-attachments/assets/c189e571-93f5-424c-a558-e95ca85e44ac)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -52,10 +56,24 @@ Figure -02 HALF Subtractor
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
-
+Developed by: Manjusri Kavya R 
+RegisterNumber:24900125*/
+```
+module ex03(a,b,cy, sm, df,bo);
+ input a,b; 
+output sm,cy, df, bo;
+ xor(sm,a,b);
+ and(cy,a,b); xor(df,a,b);
+ and (bo,~a,b);
+endmodule
+```
 **RTL Schematic**
+
+![image](https://github.com/user-attachments/assets/cbea7135-fbe2-4ea7-add4-3b2b99eabc82)
 
 **Output/TIMING Waveform**
 
+![image](https://github.com/user-attachments/assets/a26f5e33-5263-4284-bc87-39fe9c89425d)
+
 **Result:**
+Thus designing a half adder and half subtractor circuit and its truth table is verified in Quartus using Verilog programming.
